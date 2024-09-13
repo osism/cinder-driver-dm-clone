@@ -30,7 +30,7 @@ from cinder import interface
 from cinder import objects
 from cinder import utils
 from cinder.volume import configuration
-from cinder.volume.drivers.dmclone.dmsetup import DMSetup
+from .dmsetup import DMSetup
 from cinder.volume.drivers import lvm
 from cinder.volume import rpcapi as volume_rpcapi
 from cinder.volume import volume_utils
