@@ -14,6 +14,6 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-from cinder.volume.drivers.dmclone.driver import DMCloneVolumeDriver
+from .driver import DMCloneVolumeDriver
 
 __all__ = ["DMCloneVolumeDriver"]
