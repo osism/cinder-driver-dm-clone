@@ -380,7 +380,7 @@ class DMCloneVolumeDriver(lvm.LVMVolumeDriver):
         # NOTE(jhorstmann): Extend attached volume is currently missing on nova
         # side for libvirt and local volume type
         # https://github.com/janhorstmann/openstack-nova/commit/bf0239bb4899a973b357bcc91c193b27e2508758
-        data['online_extend_support'] = False
+        data["online_extend_support"] = False
 
         self._stats.update(data)
 
