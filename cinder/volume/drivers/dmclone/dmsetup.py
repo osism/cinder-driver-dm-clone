@@ -18,7 +18,6 @@ from os_brick import executor
 from oslo_concurrency import processutils as putils
 from oslo_log import log as logging
 
-
 LOG = logging.getLogger(__name__)
 
 
@@ -65,13 +64,13 @@ class DMSetup(executor.Executor):
     def table(self, target: str) -> list[str]:
         cmd = ["table"]
         cmd.append(target)
-        (out, err) = self._run(cmd)
+        out, err = self._run(cmd)
         return out.strip().split(" ")
 
     def status(self, target: str) -> list[str]:
         cmd = ["status"]
         cmd.append(target)
-        (out, err) = self._run(cmd)
+        out, err = self._run(cmd)
         return out.strip().split(" ")
 
     def rename(self, target: str, name: str):
